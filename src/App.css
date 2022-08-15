@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+*{
+  background-color: antiquewhite;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.App-link {
-  color: #61dafb;
+.trivia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.questions{
+  background-color: rgba(230, 59, 230, 0.904);
+  padding: 20px;
+  border: solid black 5px;
+  border-radius: 23px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  padding: 15px;
+}
+
+.answer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: large;
+  width: 200%;
+  padding: 15px;
+  margin: 10px;
+  border: 3px solid black;
+  border-radius: 20px;
+  /* background: linear-gradient(rgb(130, 148, 238) , rgb(209, 45, 235)); */
+  background-color: rgb(148, 124, 235);
+  transition: all ease-in-out 0.3s;
+}
+.answer:hover{
+  background-color: rgb(232, 248, 10);
+  cursor: pointer;
+}
+
+.answer.right{
+   background-color: greenyellow;
+}
+
+.answer.wrong{
+  background-color: crimson;
+}
+
+.player{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 23px;
+}
+.username{
+  border: solid black 3px;
+  width: 100%;
+  height: 100%;
+  font-size: larger;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 23px;
+}
+.username:hover{
+  background-color: white;
+}
+.btn{
+  padding: 12px;
+  margin: 15px;
+  border-radius: 10px;
+  border: solid black 3px;
+  cursor: pointer;
+  width: 80%;
+}
+.btn:hover{
+  background-color: white;
 }
